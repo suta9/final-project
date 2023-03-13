@@ -6,20 +6,21 @@ x,y,t = sy.symbols('x y t')
 
 #Displacement equation differentiation = Velocity
 
-f = t**3
+f = x**3
 
 sy.plot(f)
 
-df = sy.diff(f, t)
+df = sy.diff(f, x)
 
 sy.plot(df)
-print(df) #Velocity equation = 5*t**4 + 24*t
+print(df) #Velocity equation differentiation = Acceleration
 
 # Velocity differentiation = Acceleration
 
-df2 = sy.diff(f, t, 2)
+df2 = sy.diff(f, x, 2)
 
 sy.plot(df2)
-print(df2) #Acceleration equation = 20t**3 + 24
+print(df2) #Acceleration
+#----------------------------------------------------------
+# Integration
 
-#----------------------------------------------------------------------------
