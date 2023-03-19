@@ -1,26 +1,26 @@
-import numpy as np
 import sympy as sy
-import matplotlib.pyplot as plt
 
-x,y,t = sy.symbols('x y t')
+x,y = sy.symbols('x y')
 
-#Displacement equation differentiation = Velocity
+def accel_diff(y):
+    #Displacement equation differentiation = Velocity
 
-f = x**3
+    f = y
 
-sy.plot(f)
+    sy.plot(f)
 
-df = sy.diff(f, x)
+    df = sy.diff(f, x)
 
-sy.plot(df)
-print(df) #Velocity equation differentiation = Acceleration
+    sy.plot(df)
+    print(df) #Velocity equation differentiation = Acceleration
 
-# Velocity differentiation = Acceleration
+    # Velocity differentiation = Acceleration
 
-df2 = sy.diff(f, x, 2)
+    df2 = sy.diff(df, x)
 
-sy.plot(df2)
-print(df2) #Acceleration
-#----------------------------------------------------------
-# Integration
+    sy.plot(df2)
+    print(df2) #Acceleration
+    #----------------------------------------------------------
+
+accel_diff()
 
