@@ -6,4 +6,5 @@ The program works as follows:
 3. "Derivative" and "Integral" contains a code that calculates and plots a graph of the differentiation and integration
 4. The Graph of both programs shows the initial graph, the one time Differentiate/Integrate graph and the second time Differentiate/Integrate
 5. The Example programs must be ran with no arguments in the brackets
+
 All of the Derivative and Integral Operation uses Sympy library with sympy.diff and sympy.integral respectively
