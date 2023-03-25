@@ -1,8 +1,0 @@
-Module that require in this project
-
-setup
-find_packages
-setuptools
-sympy
-
-------------------------------------------
